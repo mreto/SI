@@ -36,7 +36,7 @@ def count_occurence(vector, keywords, margin=5):
     length = vector.shape[0]
     dictionary = {}
     for keyword in keywords:
-        indices, = np.where(np.char.find(vector, keyword) > -1)
+        indices, = np.where(np.char.find(vector, keyword) == 0)
         # all the indices of elements that contain keyword
         # example vector = ['qaa', 'eea', 'jjdaa'], keyword = 'aa'
         # -> indices = [0, 2]
@@ -67,38 +67,31 @@ def count_occurence(vector, keywords, margin=5):
     return dictionary
 
 
-def write_to_file(data_frame, directory, option=1):
-    ext = ""
-    if option is 1:
-        ext += ".dat"
-        file = open(directory + ext, 'w')
-        output_string = ''
-        output_string = str(data_frame.shape[1]) + '\n'
-        output_string += "#n"
-        columns = data_frame.columns
-        for column in columns:
-            output_string += ' ' + column
-        output_string += "\n"
-        file.writelines(output_string)
-        file.close()
-
-        data_frame.to_csv(
-            directory + ext, sep=' ', header=False, index=False, mode='a')
-        return
-    # note mode='w' because the old file need to be destryed;
-    data_frame.to_csv(
-        directory + ext, sep=' ', header=False, index=False, mode='w')
+def write_to_file(data_frame, file_name):
+    file = open(file_name, 'w')
+    output_string = ''
+    output_string = str(data_frame.shape[1]) + '\n'
+    output_string += "#n"
+    columns = data_frame.columns
+    for column in columns:
+        output_string += ' ' + column
+    output_string += "\n"
+    file.writelines(output_string)
+    file.close()
+    data_frame.to_csv(file_name, sep=' ', header=False, index=False, mode='a')
 
 
-def main():
+def get_som_data():
 
-    # dir_data = ['./articles/*', './assasination/*', './catastrophy/*']
-    # dir_output = [
-    #     './correct_articles', './correct_assasination', './correct_catastrophy'
-    # ]
+    dir_data = ['./articles/*', './assasination/*', './catastrophy/*']
+    dir_output = [
+        'new_generated_data/correct_articles.dat',
+        'new_generated_data/correct_assasination.dat',
+        'new_generated_data/correct_catastrophy.dat'
+    ]
 
-    dir_data = ['./neutralne/*']
-    dir_output = ['./neut']
+    # dir_data = ['./neutralne/*']
+    # dir_output = ['new_generated_data/neut.dat']
 
     keywords = [line.rstrip('\n') for line in open('keywords')]
 
@@ -120,8 +113,6 @@ def main():
             data_frame = pd.DataFrame(dictionary).T.fillna(0)
             write_to_file(data_frame, single_dir_output)
 
-            # write_to_file(data_frame, single_dir_output, option=0)
-
 
 if __name__ == "__main__":
-    main()
+    get_som_data()
