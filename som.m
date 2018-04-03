@@ -3,7 +3,10 @@ rehash toolboxcache
 clear
 clc
 
-sD = som_read_data('new_generated_data/correct_articles.dat');
+## sD = som_read_data('new_generated_data/correct_articles.dat');
+## sD = som_read_data('new_generated_data/correct_assasination.dat');
+sD = som_read_data('new_generated_data/correct_catastrophy.dat');
+
 %sD = som_read_data('old_generated_data/articles_values.dat');
 %sD = som_read_data('old_generated_data/assasination_frequencies.dat');
 %sD = som_read_data('old_generated_data/assasination_values.dat');
