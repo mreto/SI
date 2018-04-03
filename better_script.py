@@ -72,12 +72,15 @@ def write_to_file(data_frame, file_name):
     output_string = ''
     output_string = str(data_frame.shape[1]) + '\n'
     output_string += "#n"
-    columns = data_frame.columns
-    for column in columns:
+    columns_lables = data_frame.columns
+    row_labels = data_frame.index
+    for column in columns_lables:
         output_string += ' ' + column
     output_string += "\n"
     file.writelines(output_string)
     file.close()
+    # zzzz to ensure that it is the last column
+    data_frame['zzzz'] = row_labels
     data_frame.to_csv(file_name, sep=' ', header=False, index=False, mode='a')
 
 
