@@ -1,0 +1,9 @@
+Zadania (8.04.2018):
+
+- Zaobserwować, jak wyglądają wektory dla poszczególnych słów kluczowych, na ich podstawie zredukować szum (obcięcie ogona).
+
+- Dodanie wag odległości od słowa, zaprzestanie po napotkaniu kropki, średnika, może przecinka.
+
+- Zredukowanie liczby słów z użyciem narzędzi językowych.
+
+- Lepsza biblioteka do SOM-ów, MDS.
