@@ -1,0 +1,1 @@
+Posprzątałem trochę, w articles/ są wszystkie niesformatowane artykuły w .txt, w data wszystkie dane wygenerowane z pythonow, gotowe do przemielenia przez matlaba, w som_maps wszystkie ostateczne mapy z matlaba. Złożyłem wszystkie skrypty w pythonie w jeden - script.py
