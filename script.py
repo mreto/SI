@@ -203,7 +203,17 @@ def get_combined_som_data(n):
             write_to_file(shorter_data_frame,
                           dir_output + 'output' + str(i) + '.dat')
 
-
+def get_basis(word):
+    answer = ''
+    with open('dictionaries/' + word[0] + '.tab') as f:
+        for line in f:
+            if line.split()[0] == word:
+                answer = line.split()[1]
+                break
+    if answer == '':
+        answer = word
+    return answer
+            
 if __name__ == "__main__":
     get_som_data()
     get_combined_som_data(4)
