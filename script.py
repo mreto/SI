@@ -2,6 +2,7 @@ import glob
 import numpy as np
 import pandas as pd
 import re
+import unidecode
 from collections import Counter
 
 
@@ -119,11 +120,14 @@ def get_som_data():
     ]
     dir_output = [
         './data/new_generated_data/assasination_plus_catastrophy.dat',
-        './data/new_generated_data/correct_assasination.dat'
+        './data/new_generated_data/correct_assasination.dat',
         './data/new_generated_data/correct_catastrophy.dat'
     ]
 
     # dir_data = ['./articles/neural_from_wiki/*']
+    # dir_output = ['./data/new_generated_data/neut.dat']
+
+    # dir_data = ['./p/*']
     # dir_output = ['./data/new_generated_data/neut.dat']
 
     keywords = [line.rstrip('\n') for line in open('keywords')]
@@ -131,8 +135,9 @@ def get_som_data():
     for single_dir_data, single_dir_output in zip(dir_data, dir_output):
         print('generating data from ', single_dir_data)
         vector = get_raw_vector(single_dir_data)
-        if vector is not None:
-            dictionary = count_occurence(vector, keywords, 6)
+        vector_basis, _ = convert_to_basis(vector)
+        if vector_basis is not None:
+            dictionary = count_occurence(vector_basis, keywords, 6)
 
             # transforms from:
             # {'is': {'This': 1, 'very':1},
@@ -231,6 +236,36 @@ def get_basis(word):
     if answer == '':
         answer = word
     return answer
+
+
+def convert_to_basis(vector):
+    """
+    Giving the vector with natural polish text, returns bases
+    ['smolenskie', 'sprawy'] -> ['smolenski', 'sprawa']
+
+    words_not_in_vectors are usefull to debugging which words are not in
+    dictionary, e.g there is no 'Kaczynski' in dictionary and we should
+    probably add it.
+    """
+
+    # load directory containing all Polish words
+    dic = {}
+    all_data_dic = glob.glob('./dictionaries/*')
+    for dict_file in all_data_dic:
+        with open(dict_file) as f:
+            for line in f:
+                dic[unidecode.unidecode(
+                    line.split()[0])] = unidecode.unidecode(line.split()[1])
+    converted_vector = []
+    words_not_in_vectors = []
+    for word in vector:
+        if word in dic:
+            converted_vector.append(dic[word])
+        else:
+            converted_vector.append(word)
+            if word not in '!.?':
+                words_not_in_vectors.append(word)
+    return np.array(converted_vector), words_not_in_vectors
 
 
 if __name__ == "__main__":
