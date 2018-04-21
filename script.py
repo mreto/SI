@@ -9,9 +9,10 @@ def get_raw_vector(directory):
     """
     Giving the files directory, returns numpy vector containing all words in
     unchanged order.
+      - The punctation marks '?' '!' '.' are treated as words
+      - Other interpunction is deleted
+      - All words are converted to lower case.
     Example of directory : "./articles/*"
-    The interpuction ? ! . are treated as words
-    All words are converted to lower case.
     Example of returned data:
     ['smolensk"' 'jest' ... 'przez' 'zespol' 'macierewicza', '.']
     """
@@ -29,9 +30,24 @@ def get_raw_vector(directory):
     return None
 
 
-def remove_dot(vector, max_wage=5, margin_before=True):
+def count_distance(vector, max_distance=5, margin_before=True):
     """
-    returns dictionary with words and wage
+    Returns the distance from the beginning or end of the vector.
+
+    Example situation, we have found the keyword in the main vector,
+    vector = ['aa', 'bb', '?', 'cc', 'dd', 'KEYWORD', 'ee', 'ff', 'gg', '?', 'hh']
+    we would use function count_distance to get distance from keyword.
+    so
+    vector_beginning = ['aa', 'bb', '?', 'cc', 'dd']
+    count_distance(vector_beginning, margin_before=True)
+    returns dictionary {'dd':5, 'cc':4'}
+
+    vector_end = ['ee', 'ff', 'gg', '?', 'hh']
+    count_distance(vector_end, margin_before=False)
+    returns dictionary {'ee':5, 'ff':4', 'gg': 3}
+
+    function stops counting after founding '?', '!', '.' (another sentence).
+
     """
     count = []
     sentence_vector = []
@@ -40,7 +56,7 @@ def remove_dot(vector, max_wage=5, margin_before=True):
     for i, word in enumerate(reversed(list(vector))):
         if word in {'?', '!', '.'}:
             break
-        count.append(max_wage - i)
+        count.append(max_distance - i)
         sentence_vector.append(word)
 
     return Counter(dict(zip(sentence_vector, count)))
@@ -48,8 +64,8 @@ def remove_dot(vector, max_wage=5, margin_before=True):
 
 def count_occurence(vector, keywords, margin=5):
     """
-    Giving the vector of words, returns dictionary of occurences with weights
-    of words in marigin in vector. Weights is distance from keyword
+    Giving the vector of words, returns dictionary of occurences with distance
+    from KEYWORD in marigin.
     Example:
     vector = ['This', 'is', 'very', 'short', 'very', 'sentence']
     keywords = ['is', 'short', 'very']
@@ -70,8 +86,9 @@ def count_occurence(vector, keywords, margin=5):
         for index in indices:
             left_margin = vector[max(0, index - margin):index]
             right_margin = vector[index + 1:min(index + margin, length)]
-            dictionary[keyword] += remove_dot(left_margin)
-            dictionary[keyword] += remove_dot(
+            dictionary[keyword] += count_distance(
+                left_margin, margin_before=True)
+            dictionary[keyword] += count_distance(
                 right_margin, margin_before=False)
 
     return dictionary
@@ -203,6 +220,7 @@ def get_combined_som_data(n):
             write_to_file(shorter_data_frame,
                           dir_output + 'output' + str(i) + '.dat')
 
+
 def get_basis(word):
     answer = ''
     with open('dictionaries/' + word[0] + '.tab') as f:
@@ -213,7 +231,8 @@ def get_basis(word):
     if answer == '':
         answer = word
     return answer
-            
+
+
 if __name__ == "__main__":
     get_som_data()
-    get_combined_som_data(4)
+    # get_combined_som_data(4)
