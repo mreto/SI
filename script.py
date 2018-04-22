@@ -114,21 +114,27 @@ def write_to_file(data_frame, file_name):
 
 def get_som_data():
 
-    dir_data = [
-        './articles/assasination_plus_catastrophy/*',
-        './articles/assasination/*', './articles/catastrophy/*'
-    ]
-    dir_output = [
-        './data/new_generated_data/assasination_plus_catastrophy.dat',
-        './data/new_generated_data/correct_assasination.dat',
-        './data/new_generated_data/correct_catastrophy.dat'
-    ]
+    # dir_data = [
+    #     './articles/assasination_plus_catastrophy/*',
+    #     './articles/assasination/*', './articles/catastrophy/*'
+    # ]
+    # dir_output = [
+    #     './data/new_generated_data/assasination_plus_catastrophy.dat',
+    #     './data/new_generated_data/correct_assasination.dat',
+    #     './data/new_generated_data/correct_catastrophy.dat'
+    # ]
 
-    # dir_data = ['./articles/neural_from_wiki/*']
-    # dir_output = ['./data/new_generated_data/neut.dat']
+    # dir_data = ['./articles/random_wiki/*']
+    # dir_output = ['./data/shorter_generated_data/neut.dat']
 
     # dir_data = ['./p/*']
     # dir_output = ['./data/new_generated_data/neut.dat']
+
+    # dir_data = ['./articles/catastrophy/*']
+    # dir_output = ['./data/shorter_generated_data/catastrophy.dat']
+    dir_data = ['./articles/assasination/*']
+    dir_output = ['./data/shorter_generated_data/assasination.dat']
+
 
     keywords = [line.rstrip('\n') for line in open('keywords')]
 
@@ -149,13 +155,19 @@ def get_som_data():
             # short   0      2       0     0       0
             # very    0      0       1     2       1
             data_frame = pd.DataFrame(dictionary).T.fillna(0)
-            shorter_data_frame = delete_single_words(data_frame)
+            shorter_data_frame = delete_vector_tail(data_frame)
+            shorter_data_frame.to_csv('./analyze_after_cut/vector_assasination')
+            #shorter_data_frame.to_csv('./analyze_after_cut/vector_neutral')
+            #shorter_data_frame.to_csv('./analyze_after_cut/vector_catastrophy')
             write_to_file(shorter_data_frame, single_dir_output)
 
 
-def delete_single_words(data_frame):
+def delete_vector_tail(data_frame):
     for column in data_frame:
-        if data_frame[column].sum() <= 1.0:
+        m = float(data_frame[column].max())
+        s = float(data_frame[column].sum())
+        similarity = (m/s)*100
+        if s <= 10 or similarity >= 50:
             data_frame.pop(column)
     return data_frame
 
