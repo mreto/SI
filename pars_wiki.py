@@ -9,7 +9,7 @@ keys = f.readlines()
 for key in keys:
     # find list of possible articles titles simmilar to key
     # sometimes it finds entirely not connected articles
-    articles_title = wikipedia.search(key, results=10)
+    articles_title = wikipedia.search(key, results=1)
     print(articles_title)
     for title in articles_title:
         try:
@@ -21,7 +21,7 @@ for key in keys:
         without_new_line = without_accent.replace('\n', ' ')
 
         try:
-            new_file = open("neutralne/" + key + "_" + title, "w")
+            new_file = open("./articles/neural_from_wiki/" + key.rstrip() + "_" + title, "w")
         except:
             continue
         new_file.write(without_new_line)
