@@ -1,11 +1,12 @@
-Zadania (8.04.2018):
+1 odległości za pomocą mds stress
+2 poprawic końcówki w mapach - somy
+3 sprawko
+4 dodawać więcej do neutralnego zbioru aż się przekęci i zacznie przypominac katastrofę 
+*można by jeszcze:
+- wywalić spójniki jako słowa kontekstowe
+- spróbować wyłapywać zaprzeczenia
+- spróbować zrobić klasyfikator artykułów na podstawie macierzy odłegłości z mds stress
 
-- Zaobserwować, jak wyglądają wektory dla poszczególnych słów kluczowych, na ich podstawie zredukować szum (obcięcie ogona).
 
-- Dodanie wag odległości od słowa, zaprzestanie po napotkaniu kropki, średnika, może przecinka.
-
-- Zredukowanie liczby słów z użyciem narzędzi językowych.
-
-- Lepsza biblioteka do SOM-ów, MDS.
 
 
