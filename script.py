@@ -118,22 +118,15 @@ def get_som_data():
 
     dir_data = [
         './articles/assasination_plus_catastrophy/*',
-        './articles/assasination/*', './articles/catastrophy/*'
+        './articles/assasination/*', './articles/catastrophy/*',
+        './articles/neural_from_wiki/*'
     ]
     dir_output = [
         './data/new_generated_data/assasination_plus_catastrophy.dat',
         './data/new_generated_data/correct_assasination.dat',
-        './data/new_generated_data/correct_catastrophy.dat'
+        './data/new_generated_data/correct_catastrophy.dat',
+        './data/new_generated_data/neutral_from_wiki.dat'
     ]
-
-    # dir_data = ['./articles/neural_from_wiki/*']
-    # dir_output = ['./data/new_generated_data/neutral_from_wiki.dat']
-
-    # dir_data = ['./articles/catastrophy/*']
-    # dir_output = ['./data/shorter_generated_data/catastrophy.dat']
-
-    # dir_data = ['./articles/assasination/*']
-    # dir_output = ['./data/shorter_generated_data/assasination.dat']
 
     keywords = [line.rstrip('\n') for line in open('keywords')]
     keywords_full = [line.rstrip('\n') for line in open('./keywords_full')]
@@ -177,7 +170,6 @@ def delete_vector_tail(data_frame):
 def get_part_vector(directory, number_to_add):
 
     list_of_vectors = []
-
     number_to_add = math.floor(number_to_add)
     if number_to_add < 1:
         number_to_add = 1
@@ -194,10 +186,10 @@ def get_part_vector(directory, number_to_add):
     return None
 
 
-def get_combined_som_data(n):
+def get_parted_som_data(n):
     dir_neutral = './articles/neural_from_wiki/*'
     dir_biased = './articles/catastrophy/*'
-    dir_output = './data/biased_catastrophy/'
+    dir_output = './data/biased_catastrophy/neutral_plus_part_catastrophy/'
 
     keywords = [line.rstrip('\n') for line in open('keywords')]
     keywords_full = [line.rstrip('\n') for line in open('keywords_full')]
@@ -221,8 +213,19 @@ def get_combined_som_data(n):
         shorter_biased = delete_vector_tail(data_frame_biased)
         shorter_neutral = delete_vector_tail(data_frame_neutral)
         data_frame = shorter_neutral.add(shorter_biased, fill_value=0)
-        write_to_file(data_frame,
-                      dir_output + 'biased_fraction' + str(i) + '.dat')
+        write_to_file(
+            data_frame,
+            dir_output + 'biased_fraction' + str(i).zfill(2) + '.dat')
+
+
+def get_multiply_som_data(n):
+
+    dir_neutral = './articles/neural_from_wiki/*'
+    dir_biased = './articles/catastrophy/*'
+    dir_output = './data/biased_catastrophy/neutral_plus_multiply_catastrophy/'
+
+    keywords = [line.rstrip('\n') for line in open('keywords')]
+    keywords_full = [line.rstrip('\n') for line in open('keywords_full')]
 
     for i in range(1, n):
         print('generating data from ', dir_neutral, 'x', 1, ' and ',
@@ -239,9 +242,9 @@ def get_combined_som_data(n):
         data_frame_neut = pd.DataFrame(dictionary_neutral).T.fillna(0)
         neut_short = delete_vector_tail(data_frame_neut)
         data_frame = biased_multiplied.add(neut_short, fill_value=0)
-        write_to_file(
-            data_frame,
-            dir_output + 'neutral_plus_catastrophy_times_' + str(i) + '.dat')
+        write_to_file(data_frame,
+                      dir_output + 'neutral_plus_catastrophy_times_' +
+                      str(i).zfill(2) + '.dat')
 
 
 def get_basis(word):
@@ -287,5 +290,6 @@ def convert_to_basis(vector):
 
 
 if __name__ == "__main__":
-    # get_som_data()
-    get_combined_som_data(30)
+    get_som_data()
+    get_parted_som_data(30)
+    get_multiply_som_data(30)
