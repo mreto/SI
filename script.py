@@ -149,12 +149,17 @@ def get_som_data():
             # short   0      2       0     0       0
             # very    0      0       1     2       1
             data_frame = pd.DataFrame(dictionary).T.fillna(0)
-            shorter_data_frame = delete_vector_tail(data_frame)
-            shorter_data_frame.to_csv(
-                './analyze_after_cut/vector_assasination')
+            shorter_data_frame = normalize(delete_vector_tail(data_frame))
+            # shorter_data_frame.to_csv('./analyze_after_cut/vector_assasination')
             # shorter_data_frame.to_csv('./analyze_after_cut/vector_neutral')
             # shorter_data_frame.to_csv('./analyze_after_cut/vector_catastrophy')
             write_to_file(shorter_data_frame, single_dir_output)
+
+
+def normalize(data_frame):
+    df_max = data_frame.max(axis=1)
+    data_frame = data_frame.divide(df_max, axis=0)
+    return data_frame
 
 
 def delete_vector_tail(data_frame):
@@ -210,8 +215,8 @@ def get_parted_som_data(n):
         data_frame_biased = pd.DataFrame(dictionary_biased).T.fillna(0)
         data_frame_neutral = pd.DataFrame(dictionary_neutral).T.fillna(0)
 
-        shorter_biased = delete_vector_tail(data_frame_biased)
-        shorter_neutral = delete_vector_tail(data_frame_neutral)
+        shorter_biased = normalize(delete_vector_tail(data_frame_biased))
+        shorter_neutral = normalize(delete_vector_tail(data_frame_neutral))
         data_frame = shorter_neutral.add(shorter_biased, fill_value=0)
         write_to_file(
             data_frame,
@@ -237,10 +242,10 @@ def get_multiply_som_data(n):
         dictionary_neutral = count_occurence(vector_neutral, keywords,
                                              keywords_full, 6)
         data_frame_biased = pd.DataFrame(dictionary_biased).T.fillna(0)
-        biased_short = delete_vector_tail(data_frame_biased)
+        biased_short = normalize(delete_vector_tail(data_frame_biased))
         biased_multiplied = biased_short.apply(lambda x: x * i)
         data_frame_neut = pd.DataFrame(dictionary_neutral).T.fillna(0)
-        neut_short = delete_vector_tail(data_frame_neut)
+        neut_short = normalize(delete_vector_tail(data_frame_neut))
         data_frame = biased_multiplied.add(neut_short, fill_value=0)
         write_to_file(data_frame,
                       dir_output + 'neutral_plus_catastrophy_times_' +
