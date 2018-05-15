@@ -34,7 +34,7 @@ print('./som_maps/basic_maps/catastrophy.pdf')
 
 
 
-files = glob('./data/biased_catastrophy/neutral_plus_part_catastrophy/*')
+files = glob('./data/biased_catastrophy/neutral_plus_multiply_catastrophy/*')
 
 diffrences = cell(numel(files), 7)
 for i=1:numel(files)
