@@ -1,0 +1,721 @@
+
+
+KLUCZOWE SŁOWO: 154
+w          112
+samolot     92
+wersja      51
+z           46
+o           34
+rok         25
+do          21
+2           19
+ktory       18
+polskie     18
+
+KLUCZOWE SŁOWO: Antoni
+polski       94
+i            70
+rosyjski     32
+w            28
+z            27
+polityka     26
+niemiecki    10
+pochodzic    10
+nosic        10
+oda           9
+
+KLUCZOWE SŁOWO: Blasik
+zwykly      0
+oznaczyc    0
+kraj        0
+krymu       0
+krytyka     0
+ktory       0
+kwestia     0
+kwietni     0
+ladowac     0
+lato        0
+
+KLUCZOWE SŁOWO: Bronislaw
+polski     8
+i          5
+2010       4
+przypis    4
+wrazic     4
+w          4
+1926       4
+z          3
+przy       2
+rok        2
+
+KLUCZOWE SŁOWO: Donald
+w        264
+z        143
+on        59
+sie       55
+na        53
+i         48
+a         35
+do        33
+przez     30
+ktory     29
+
+KLUCZOWE SŁOWO: Kaczynski
+prezydent    13
+polski        7
+na            7
+w             6
+z             5
+oraz          5
+czolo         4
+o             4
+przez         4
+wizyta        3
+
+KLUCZOWE SŁOWO: Komorowski
+polski     13
+w          10
+i           5
+sie         4
+urodzic     3
+lipiec      3
+1926        3
+10          2
+lato        2
+2010        1
+
+KLUCZOWE SŁOWO: Krauze
+zwykly      0
+oznaczyc    0
+kraj        0
+krymu       0
+krytyka     0
+ktory       0
+kwestia     0
+kwietni     0
+ladowac     0
+lato        0
+
+KLUCZOWE SŁOWO: Macierewicz
+polityka    4
+polski      1
+zwykly      0
+lista       0
+krymu       0
+krytyka     0
+ktory       0
+kwestia     0
+kwietni     0
+ladowac     0
+
+KLUCZOWE SŁOWO: Putin
+w             70
+z             61
+prezydent     36
+na            30
+sie           24
+i             23
+on            21
+przez         17
+majatek       16
+stanowisko    16
+
+KLUCZOWE SŁOWO: Smolensk
+w             40
+lotnisko      10
+pod           10
+katastrofa     9
+wojskowy       7
+poblize        7
+smolensk       7
+kolejny        5
+z              5
+co             5
+
+KLUCZOWE SŁOWO: Tusk
+donald      5
+minister    4
+rada        3
+polski      1
+zwykly      0
+lipiec      0
+krymu       0
+krytyka     0
+ktory       0
+kwestia     0
+
+KLUCZOWE SŁOWO: analiza
+i             9
+na            8
+przyczynic    8
+z             5
+w             5
+byly          5
+podstawic     4
+kwestia       3
+sprawa        2
+oraz          2
+
+KLUCZOWE SŁOWO: blad
+w           46
+on          15
+oznaczyc    14
+jest        11
+zawierac    10
+liczba       9
+jako         9
+do           8
+i            8
+podczas      8
+
+KLUCZOWE SŁOWO: bomba
+7         18
+i         18
+4         18
+3         15
+liczba    15
+2         14
+24        14
+1         11
+9         10
+14        10
+
+KLUCZOWE SŁOWO: brzoza
+w              429
+rok            133
+na             125
+z               89
+i               79
+sie             71
+zostac          61
+przez           50
+jest            46
+mieszkaniec     43
+
+KLUCZOWE SŁOWO: dym
+do           20
+i            19
+sie          17
+lubic        12
+prezydent     7
+cel           6
+pismo         5
+jest          5
+uklad         5
+w             5
+
+KLUCZOWE SŁOWO: ekspert
+w                19
+z                13
+lubic            10
+wiele            10
+przeprowadzic     9
+na                9
+sie               7
+zas               5
+i                 5
+przeprowadzac     5
+
+KLUCZOWE SŁOWO: film
+w           95
+na          38
+to          28
+sie         21
+historia    20
+i           16
+tezyc       16
+dla         13
+z           12
+za          12
+
+KLUCZOWE SŁOWO: general
+w           52
+z           45
+i           39
+na          34
+przez       33
+sie         28
+zostac      28
+on          24
+do          23
+wojskowy    22
+
+KLUCZOWE SŁOWO: hanba
+jaka       4
+12         3
+zwykly     0
+lot        0
+krymu      0
+krytyka    0
+ktory      0
+kwestia    0
+kwietni    0
+ladowac    0
+
+KLUCZOWE SŁOWO: identyfikacja
+zwykly      0
+oznaczyc    0
+kraj        0
+krymu       0
+krytyka     0
+ktory       0
+kwestia     0
+kwietni     0
+ladowac     0
+lato        0
+
+KLUCZOWE SŁOWO: kabina
+okolo      5
+ten        5
+lista      0
+kraj       0
+krymu      0
+krytyka    0
+ktory      0
+kwestia    0
+kwietni    0
+ladowac    0
+
+KLUCZOWE SŁOWO: katastrofa
+w             100
+samolot        34
+po             25
+on             16
+zostac         14
+ktory          13
+przyczynic     13
+a              13
+rok            12
+do             10
+
+KLUCZOWE SŁOWO: klamstwo
+i          5
+on         3
+majatek    2
+w          1
+zwykly     0
+lipiec     0
+linka      0
+linia      0
+liczba     0
+lato       0
+
+KLUCZOWE SŁOWO: komisja
+federalny    15
+w            13
+z            11
+przez        10
+na           10
+rzadowy       5
+specjalny     5
+a             5
+i             5
+do            4
+
+KLUCZOWE SŁOWO: krzyk
+zwykly      0
+oznaczyc    0
+kraj        0
+krymu       0
+krytyka     0
+ktory       0
+kwestia     0
+kwietni     0
+ladowac     0
+lato        0
+
+KLUCZOWE SŁOWO: krzyz
+wielki     5
+zwykly     0
+lista      0
+kraj       0
+krymu      0
+krytyka    0
+ktory      0
+kwestia    0
+kwietni    0
+ladowac    0
+
+KLUCZOWE SŁOWO: lotnisko
+w           67
+na          40
+z           33
+byly        22
+do          16
+lotnisko    14
+pierwszy    12
+i           11
+on          11
+poblize     10
+
+KLUCZOWE SŁOWO: mgla
+i              43
+mieszkaniec    41
+wersja         35
+w              18
+jest           17
+il             14
+rok            13
+moc            11
+z              11
+zostac          8
+
+KLUCZOWE SŁOWO: nacisk
+na           18
+z            16
+on            8
+sam           6
+pod           5
+powod         5
+proba         5
+prezydent     5
+wobec         5
+przez         4
+
+KLUCZOWE SŁOWO: nalega
+zwykly      0
+oznaczyc    0
+kraj        0
+krymu       0
+krytyka     0
+ktory       0
+kwestia     0
+kwietni     0
+ladowac     0
+lato        0
+
+KLUCZOWE SŁOWO: ofiary
+w           50
+z           37
+zwloki      26
+rok         21
+on          18
+i           16
+ponad       16
+okolo       16
+niektory    15
+znalezc     14
+
+KLUCZOWE SŁOWO: pancerny
+a           5
+samochod    5
+seria       5
+odcinek     4
+;           4
+wobec       4
+i           4
+czlonek     4
+3           4
+w           4
+
+KLUCZOWE SŁOWO: pilot
+i            9
+drugi        6
+ale          6
+dwa          5
+pierwszy     5
+on           4
+rola         4
+osoba        4
+sluzba       3
+specjalny    2
+
+KLUCZOWE SŁOWO: pogoda
+sie        5
+z          4
+na         3
+jednak     2
+i          2
+uwaga      1
+znalezc    1
+kwietni    0
+ladowac    0
+linka      0
+
+KLUCZOWE SŁOWO: prezydent
+w             173
+na            130
+z             121
+do             57
+i              57
+prezydent      53
+on             46
+a              42
+stanowisko     41
+jest           40
+
+KLUCZOWE SŁOWO: prokuratura
+w            34
+zastepca     16
+zostac       12
+sprawic      11
+nowy         11
+ktory        10
+z            10
+rod           9
+specjalny     9
+na            8
+
+KLUCZOWE SŁOWO: przyczyny
+sie       58
+z         41
+w         40
+do        40
+i         32
+byly      21
+ktory     20
+byc       19
+jest      14
+ofiara    13
+
+KLUCZOWE SŁOWO: rosja
+w                92
+z                62
+prezydent        59
+na               26
+do               21
+oda              20
+przez            19
+i                19
+administracja    16
+on               16
+
+KLUCZOWE SŁOWO: rosyjski
+w         97
+z         53
+i         47
+na        33
+wladza    29
+rok       28
+sie       17
+ktory     17
+a         15
+do        15
+
+KLUCZOWE SŁOWO: samolot
+w          102
+z           89
+to          75
+byc         52
+i           44
+sie         41
+na          39
+do          31
+samolot     28
+typ         26
+
+KLUCZOWE SŁOWO: sekcja
+zwloki           30
+z                18
+ofiara           16
+w                11
+byly             11
+prowadzic         8
+wniosek           6
+ktory             6
+7                 5
+przeprowadzic     5
+
+KLUCZOWE SŁOWO: skrzydlo
+w         6
+pod       6
+o         5
+oraz      5
+statek    5
+prawy     5
+jednac    4
+;         3
+dwa       2
+dany      2
+
+KLUCZOWE SŁOWO: skrzynka
+aleksandra    5
+i             5
+minister      4
+gabinet       4
+sprawic       3
+powod         3
+po            3
+sie           2
+wojskowy      2
+1925          2
+
+KLUCZOWE SŁOWO: slad
+z            27
+wskazywac    15
+po           13
+na           13
+i            12
+sie          11
+to           11
+w            10
+ktory        10
+jako          9
+
+KLUCZOWE SŁOWO: sledztwo
+w                89
+sprawic          32
+i                29
+przeprowadzic    25
+on               22
+z                17
+zakonczyc        13
+tok              10
+sprawa           10
+na                9
+
+KLUCZOWE SŁOWO: spis
+w           10
+sie          6
+z            6
+seria        5
+odcinek      5
+zarzut       5
+wyprawa      5
+kolejny      5
+zawierac     5
+czesty       5
+
+KLUCZOWE SŁOWO: stenogram
+nazywac        7
+jest           7
+z              5
+to             5
+na_przyklad    5
+przec          3
+linka          0
+krymu          0
+krytyka        0
+ktory          0
+
+KLUCZOWE SŁOWO: strzal
+przed        5
+do           5
+czesc        5
+podczas      5
+w            5
+sila         4
+o            4
+nastepnie    4
+ale          4
+a            3
+
+KLUCZOWE SŁOWO: swiadek
+on          18
+z           16
+i           14
+do          13
+na          12
+o           12
+wydarzyc    10
+sie          9
+byc          8
+w            7
+
+KLUCZOWE SŁOWO: trotyl
+w               12
+sie              6
+pierwszy         5
+2                5
+tak_zwany        5
+przypis          5
+mozny            5
+historia         5
+dla              5
+wyprodukowac     5
+
+KLUCZOWE SŁOWO: tupolew
+biuro            12
+samolot           9
+rosyjski          6
+nikolajewicza     5
+zewnetrzny        5
+linka             4
+wczesnie          4
+koncern           4
+andrieja          4
+w                 3
+
+KLUCZOWE SŁOWO: wieza
+w          59
+z          54
+na         26
+do         25
+byc        18
+i          17
+seria      15
+oraz       14
+odcinek    12
+to         11
+
+KLUCZOWE SŁOWO: wrak
+lubic       12
+staly        9
+sie          7
+polskie      5
+wiele        5
+tezyc        5
+statek       4
+zobaczyc     4
+obecnie      3
+podwodny     3
+
+KLUCZOWE SŁOWO: wybuch
+w        69
+i        47
+do       32
+on       30
+sie      26
+z        24
+wojna    21
+na       21
+jest     18
+ktory    18
+
+KLUCZOWE SŁOWO: zamach
+w                78
+na               52
+do               34
+po               30
+byly             27
+sie              25
+o                22
+poprzec          20
+przeprowadzic    19
+pilsudskiego     18
+
+KLUCZOWE SŁOWO: zaniedbanie
+zwykly      0
+oznaczyc    0
+kraj        0
+krymu       0
+krytyka     0
+ktory       0
+kwestia     0
+kwietni     0
+ladowac     0
+lato        0
+
+KLUCZOWE SŁOWO: zbrodnia
+z         5
+w         3
+wydac     2
+dzien     2
+lato      0
+lipiec    0
+linka     0
+linia     0
+liczba    0
+zwykly    0
+
+KLUCZOWE SŁOWO: zdrada
+w             14
+o             10
+po             9
+do             6
+zewnetrzny     6
+on             5
+dochodzic      5
+szajba         5
+jednak         4
+linka          4

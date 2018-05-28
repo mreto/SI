@@ -7,152 +7,180 @@ samolot       28
 na            21
 pod           20
 
-KLUCZOWE SŁOWO: analiz
-biegly    15
-on        14
-byc       13
-z         11
-w          8
+KLUCZOWE SŁOWO: Antoni
+zespol    18
+z         18
+pis       17
+i         14
+na        11
 
-KLUCZOWE SŁOWO: antoni
-macierewicz    35
-z              18
-zespol         18
-pis            17
-i              14
-
-KLUCZOWE SŁOWO: blad
-i        19
-pilot    17
-w        15
-to       12
-on       12
-
-KLUCZOWE SŁOWO: blasik
+KLUCZOWE SŁOWO: Blasik
 w          20
 general    18
 kokpit     15
 byc        13
 andrzej    10
 
-KLUCZOWE SŁOWO: bomb
-byc           10
-informacja     6
-zamach         5
-jako           5
-wciaz          5
-
-KLUCZOWE SŁOWO: bronislaw
-sejm         10
+KLUCZOWE SŁOWO: Bronislaw
 prezydent    10
+sejm         10
 marszalek     8
 z             7
 i             6
 
-KLUCZOWE SŁOWO: brzoz
-z           59
-w           41
-skrzydlo    29
-on          23
-na          19
-
-KLUCZOWE SŁOWO: donald
-tuska       25
+KLUCZOWE SŁOWO: Donald
+tusk        55
 z           24
 premiera    20
 do          12
 w           11
 
-KLUCZOWE SŁOWO: dym
-zwrot      0
-morze      0
-msz        0
-mozny      0
-mozliwy    0
+KLUCZOWE SŁOWO: Kaczynski
+prezydent    93
+z            82
+w            79
+on           78
+i            52
 
-KLUCZOWE SŁOWO: eksper
-z             45
-i             20
-byc           14
-badanie       13
-niezalezny    10
-
-KLUCZOWE SŁOWO: film
-byc           33
-z             30
-ktory         29
-na            24
-katastrofa    15
-
-KLUCZOWE SŁOWO: general
-z          36
-on         28
-byc        24
-do         24
-andrzej    20
-
-KLUCZOWE SŁOWO: hanb
-lista       10
-petak        5
-niektory     5
-czesc        5
-na           4
-
-KLUCZOWE SŁOWO: identyfikacj
-przeprowadzic    9
-on               7
-ojciec           5
-podczas          5
-cel              5
-
-KLUCZOWE SŁOWO: kabin
-pilot    15
-w        11
-byc       8
-kto       6
-tuz       4
-
-KLUCZOWE SŁOWO: kaczynsk
-prezydent     99
-w             89
-z             86
-on            85
-powiedziec    59
-
-KLUCZOWE SŁOWO: katastrof
-w     250
-z     170
-po    134
-na    111
-i      91
-
-KLUCZOWE SŁOWO: klamstw
-na          14
-on          12
-pozwolic    11
-dotyczyc    10
-sie          8
-
-KLUCZOWE SŁOWO: komisj
-badanie    30
-z          28
-i          24
-w          24
-raport     24
-
-KLUCZOWE SŁOWO: komorow
+KLUCZOWE SŁOWO: Komorowski
 prezydent    14
 marszalek    11
 i            10
 sejm          9
 w             8
 
-KLUCZOWE SŁOWO: krauze
+KLUCZOWE SŁOWO: Krauze
 wybierac    5
 film        4
 sie         4
-na          3
 po          3
+na          3
+
+KLUCZOWE SŁOWO: Macierewicz
+z             55
+zespol        35
+w             25
+na            24
+powiedziec    20
+
+KLUCZOWE SŁOWO: Putin
+on      27
+z       27
+i       21
+jest    18
+za      16
+
+KLUCZOWE SŁOWO: Smolensk
+katastrofa    346
+w             281
+z             130
+na            114
+i              89
+
+KLUCZOWE SŁOWO: Tusk
+z           58
+premiera    53
+on          31
+rzad        22
+i           20
+
+KLUCZOWE SŁOWO: analiza
+biegly    15
+on        14
+z         11
+w          8
+byc        8
+
+KLUCZOWE SŁOWO: blad
+i        19
+pilot    17
+w        15
+on       12
+to       12
+
+KLUCZOWE SŁOWO: bomba
+informacja    6
+byc           5
+zamach        5
+jako          5
+jest          5
+
+KLUCZOWE SŁOWO: brzoza
+z           59
+w           41
+skrzydlo    29
+on          23
+na          19
+
+KLUCZOWE SŁOWO: dym
+zwrot       0
+morderca    0
+msz         0
+mozny       0
+mozliwy     0
+
+KLUCZOWE SŁOWO: ekspert
+z             45
+i             20
+badanie       13
+niezalezny    10
+wszystek      10
+
+KLUCZOWE SŁOWO: film
+z             30
+ktory         29
+na            24
+byc           23
+katastrofa    15
+
+KLUCZOWE SŁOWO: general
+z          36
+on         28
+do         24
+byc        22
+andrzej    20
+
+KLUCZOWE SŁOWO: hanba
+lista         10
+petak          5
+niektory       5
+czesc          5
+zamordowac     4
+
+KLUCZOWE SŁOWO: identyfikacja
+przeprowadzic    9
+on               7
+w                5
+o                5
+cel              5
+
+KLUCZOWE SŁOWO: kabina
+pilot    15
+w        11
+byc       8
+kto       6
+dowod     4
+
+KLUCZOWE SŁOWO: katastrofa
+w     250
+z     170
+po    134
+na    111
+i      91
+
+KLUCZOWE SŁOWO: klamstwo
+na          14
+on          12
+pozwolic    11
+dotyczyc    10
+sie          8
+
+KLUCZOWE SŁOWO: komisja
+badanie    30
+z          28
+i          24
+raport     24
+w          24
 
 KLUCZOWE SŁOWO: krzyk
 rosyjski    5
@@ -168,105 +196,91 @@ petak     5
 pamiec    5
 przed     5
 
-KLUCZOWE SŁOWO: lotnisk
+KLUCZOWE SŁOWO: lotnisko
 na    68
 w     48
 on    25
 z     24
 i     16
 
-KLUCZOWE SŁOWO: macierewi
-z             55
-zespol        35
-w             25
-na            24
-powiedziec    20
-
-KLUCZOWE SŁOWO: mgl
-w      8
-na     7
-i      6
-sie    5
-bo     5
+KLUCZOWE SŁOWO: mgla
+w         8
+na        7
+i         6
+rozbic    5
+bo        5
 
 KLUCZOWE SŁOWO: nacisk
-na                10
-wypowiedz          5
-jako               5
-minister           4
-miedzynarodowy     4
+na           10
+wypowiedz     5
+jako          5
+minister      4
+zaloga        4
 
 KLUCZOWE SŁOWO: nalega
-zwrot      0
-morze      0
-msz        0
-mozny      0
-mozliwy    0
+zwrot       0
+morderca    0
+msz         0
+mozny       0
+mozliwy     0
 
-KLUCZOWE SŁOWO: ofiar
+KLUCZOWE SŁOWO: ofiary
 katastrofa    109
 z              55
 w              44
 czesc          35
 tragedia       20
 
-KLUCZOWE SŁOWO: pancern
-albo        4
+KLUCZOWE SŁOWO: pancerny
+a           4
 zderzyc     4
 na          3
 byly        2
 wysokosc    2
 
-KLUCZOWE SŁOWO: pilo
+KLUCZOWE SŁOWO: pilot
 z      41
 i      40
-byc    27
+byc    24
 on     21
 w      21
 
-KLUCZOWE SŁOWO: pogod
+KLUCZOWE SŁOWO: pogoda
+ktory      5
+nas        5
 on         5
 warunki    5
-ktory      5
-my         5
-byc        4
+to         4
 
 KLUCZOWE SŁOWO: prezydent
-i     116
+i     115
 w      97
 z      94
-on     65
+on     62
 na     41
 
-KLUCZOWE SŁOWO: prokurat
+KLUCZOWE SŁOWO: prokuratura
 z         99
 w         73
 sie       57
 i         53
 polski    43
 
-KLUCZOWE SŁOWO: przyczyn
+KLUCZOWE SŁOWO: przyczyny
 katastrofa     176
 i               46
 z               41
 okolicznosc     36
 do              31
 
-KLUCZOWE SŁOWO: putin
-on     27
-z      27
-byc    23
-i      21
-za     16
-
-KLUCZOWE SŁOWO: rosj
+KLUCZOWE SŁOWO: rosja
 w        125
 z        102
 on        72
 i         51
 przez     43
 
-KLUCZOWE SŁOWO: rosyjsk
+KLUCZOWE SŁOWO: rosyjski
 w     103
 i      95
 z      69
@@ -280,47 +294,40 @@ sie     76
 na      58
 to      53
 
-KLUCZOWE SŁOWO: sekcj
-z       38
-byc     13
-albo    10
-w        7
-byly     6
+KLUCZOWE SŁOWO: sekcja
+z        38
+byc      13
+w         7
+byly      6
+mowic     6
 
-KLUCZOWE SŁOWO: skrzydl
+KLUCZOWE SŁOWO: skrzydlo
 z          42
 brzoza     29
 samolot    24
-urwac      20
 tupolew    20
+urwac      20
 
-KLUCZOWE SŁOWO: skrzyn
-z        17
+KLUCZOWE SŁOWO: skrzynka
 i        17
+z        17
 wrak     12
+ktory    10
 on       10
-zapis    10
 
 KLUCZOWE SŁOWO: slad
-na    22
 on    22
-i     14
+na    22
 z     14
+i     14
 po    12
 
-KLUCZOWE SŁOWO: sledztw
+KLUCZOWE SŁOWO: sledztwo
 w          100
 z           69
 to          44
 sprawic     36
 sie         34
-
-KLUCZOWE SŁOWO: smolensk
-katastrofa    346
-w             281
-z             130
-na            114
-i              89
 
 KLUCZOWE SŁOWO: spis
 teoria    20
@@ -330,32 +337,32 @@ i          6
 byc        5
 
 KLUCZOWE SŁOWO: stenogram
-z              30
-rozmowic       22
-i              10
-ojciec         10
-opublikowac     8
+z           30
+rozmowic    22
+o           10
+i           10
+w            8
 
 KLUCZOWE SŁOWO: strzal
 na         8
-slychac    7
 byly       7
-cztery     5
+slychac    7
 ktory      5
+cztery     5
 
-KLUCZOWE SŁOWO: swiad
-ojciec    36
-z         17
-on        17
-tym       14
-ktory     12
+KLUCZOWE SŁOWO: swiadek
+o      36
+z      17
+on     17
+tym    14
+co     12
 
 KLUCZOWE SŁOWO: trotyl
-sladow      5
-moj         4
-on          3
-i           2
-morderca    0
+sladow     5
+moj        4
+on         3
+i          2
+mozliwy    0
 
 KLUCZOWE SŁOWO: tupolew
 z           32
@@ -364,14 +371,7 @@ skrzydlo    20
 miec        19
 wrak        19
 
-KLUCZOWE SŁOWO: tusk
-z           58
-premiera    53
-on          31
-rzad        22
-i           20
-
-KLUCZOWE SŁOWO: wiez
+KLUCZOWE SŁOWO: wieza
 na        26
 w         15
 i         13
@@ -381,41 +381,41 @@ z         11
 KLUCZOWE SŁOWO: wrak
 i          25
 samolot    24
-byc        22
-w          20
 na         20
+w          20
+to         20
 
 KLUCZOWE SŁOWO: wybuch
 na           36
 on           24
-do           20
 materialy    20
+do           20
 z            19
 
 KLUCZOWE SŁOWO: zamach
-na        32
-ojciec    30
-w         26
-to        22
-do        20
+na    32
+o     30
+w     26
+to    22
+do    20
 
-KLUCZOWE SŁOWO: zaniedban
+KLUCZOWE SŁOWO: zaniedbanie
 ktory          5
 doprowadzic    4
 do             3
 katastrofa     2
 byly           1
 
-KLUCZOWE SŁOWO: zbrodni
-zwrot      0
-morze      0
-msz        0
-mozny      0
-mozliwy    0
+KLUCZOWE SŁOWO: zbrodnia
+zwrot       0
+morderca    0
+msz         0
+mozny       0
+mozliwy     0
 
-KLUCZOWE SŁOWO: zdrad
-ojciec        20
+KLUCZOWE SŁOWO: zdrada
+o             20
 zostac        15
 powiedziec     7
 w              5
-ustalic        5
+to             5

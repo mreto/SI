@@ -1,0 +1,721 @@
+
+
+KLUCZOWE SŁOWO: 154
+samolot     43
+w           39
+wrak        28
+i           24
+ktory       22
+na          20
+z           19
+o           18
+szczatki    17
+sila        15
+
+KLUCZOWE SŁOWO: Antoni
+z            18
+film         16
+zespol       13
+rezyser       9
+szef          8
+jest          8
+przez         8
+ekspert       7
+twierdzic     6
+on            6
+
+KLUCZOWE SŁOWO: Blasik
+on            6
+oraz          5
+mozny         4
+powietrzny    4
+nazwisko      3
+rok           3
+rozpoznac     3
+sila          3
+dowodca       2
+z             2
+
+KLUCZOWE SŁOWO: Bronislaw
+uwazyc         4
+z              3
+sprawa         2
+wyjasnienie    1
+zwrot          0
+miedzy         0
+lotniczy       0
+lubic          0
+m              0
+materialy      0
+
+KLUCZOWE SŁOWO: Donald
+premiera      20
+podpisac       7
+ekipa          5
+wladimira      5
+nazwisko       5
+gdy            5
+oda            5
+i              5
+powiedziec     4
+przez          4
+
+KLUCZOWE SŁOWO: Kaczynski
+i          47
+oraz       15
+rp         13
+w          13
+czlonek    12
+pani       12
+o          11
+mowic      10
+on         10
+pis        10
+
+KLUCZOWE SŁOWO: Komorowski
+uwazyc     5
+z          5
+byc        4
+przy       4
+tym        3
+rowniez    3
+sprawa     3
+uwaga      2
+o          2
+czy        2
+
+KLUCZOWE SŁOWO: Krauze
+film         42
+jest         20
+antoniego    20
+w            13
+z            11
+on            9
+przyklad      8
+rezyser       7
+walczyc       5
+uwierzyc      5
+
+KLUCZOWE SŁOWO: Macierewicz
+zespol       48
+antoniego    25
+z            13
+on           12
+przez        10
+szef          9
+mona          9
+tezyc         8
+i             7
+ktory         7
+
+KLUCZOWE SŁOWO: Putin
+w            24
+i            18
+z            17
+byc          10
+wladimira    10
+po           10
+prosty        8
+zobaczyc      8
+taka          7
+sie           7
+
+KLUCZOWE SŁOWO: Smolensk
+katastrofa    222
+w             186
+sie            69
+z              67
+on             55
+na             55
+film           54
+o              52
+ktory          50
+do             48
+
+KLUCZOWE SŁOWO: Tusk
+premiera      26
+w             22
+na            15
+i             15
+z             12
+powiedziec    10
+gdy           10
+byc            9
+miedzy         8
+chwila         8
+
+KLUCZOWE SŁOWO: analiza
+z               12
+przez            8
+ktory            8
+on               6
+wczesny          5
+po               5
+dokumentacja     5
+prokurator       5
+wynikac          5
+nowy             5
+
+KLUCZOWE SŁOWO: blad
+i           6
+samolot     5
+wiele       5
+zalog       5
+medyczny    5
+zly         4
+wyjasnic    4
+awaria      4
+dwa         4
+z           4
+
+KLUCZOWE SŁOWO: bomba
+zwrot        0
+mielic       0
+lubic        0
+m            0
+materialy    0
+mechanizm    0
+medyczny     0
+metrum       0
+miec         0
+miedzy       0
+
+KLUCZOWE SŁOWO: brzoza
+w           41
+z           32
+skrzydlo    22
+przed       21
+na          19
+czy         17
+i           14
+fragment    13
+on          12
+gdzie       12
+
+KLUCZOWE SŁOWO: dym
+zwrot        0
+mielic       0
+lubic        0
+m            0
+materialy    0
+mechanizm    0
+medyczny     0
+metrum       0
+miec         0
+miedzy       0
+
+KLUCZOWE SŁOWO: ekspert
+z          63
+zespol     46
+on         39
+w          36
+ustalic    28
+i          26
+do         22
+przez      20
+miec       19
+sie        16
+
+KLUCZOWE SŁOWO: film
+w        58
+na       37
+jest     37
+to       31
+on       30
+o        24
+ten      22
+ktory    19
+byc      16
+z        15
+
+KLUCZOWE SŁOWO: general
+prokurator    15
+powietrzny     6
+rok            5
+mozny          5
+podac          5
+oraz           4
+rozpoznac      4
+sila           4
+on             4
+szef           3
+
+KLUCZOWE SŁOWO: hanba
+zwrot        0
+mielic       0
+lubic        0
+m            0
+materialy    0
+mechanizm    0
+medyczny     0
+metrum       0
+miec         0
+miedzy       0
+
+KLUCZOWE SŁOWO: identyfikacja
+zwrot        0
+mielic       0
+lubic        0
+m            0
+materialy    0
+mechanizm    0
+medyczny     0
+metrum       0
+miec         0
+miedzy       0
+
+KLUCZOWE SŁOWO: kabina
+w           45
+z           25
+pilot       24
+do          19
+zapis       13
+samolot     11
+on          10
+rozmowic     8
+byc          8
+sie          8
+
+KLUCZOWE SŁOWO: katastrofa
+smolenski    216
+w            163
+z             76
+sie           52
+ktory         49
+na            47
+do            47
+o             43
+on            40
+przed         38
+
+KLUCZOWE SŁOWO: klamstwo
+byly         5
+wiele        5
+oda          4
+on           3
+ale          1
+miedzy       0
+lotniczy     0
+lubic        0
+m            0
+materialy    0
+
+KLUCZOWE SŁOWO: komisja
+badajacy      25
+czlonek       23
+z             21
+badanie       20
+lotniczy      18
+katastrofa    17
+ktory         17
+przec         15
+i             14
+on            13
+
+KLUCZOWE SŁOWO: krzyk
+opowiadac    5
+tylko        5
+zwrot        0
+miedzy       0
+lot          0
+lotniczy     0
+lubic        0
+m            0
+materialy    0
+mechanizm    0
+
+KLUCZOWE SŁOWO: krzyz
+prezydencki       3
+pod               1
+zwrot             0
+miedzynarodowy    0
+lubic             0
+m                 0
+materialy         0
+mechanizm         0
+medyczny          0
+metrum            0
+
+KLUCZOWE SŁOWO: lotnisko
+na           49
+w            36
+smolenski    28
+nad          14
+metrum       12
+oda          10
+lotniczy      7
+lot           7
+154m          7
+oraz          6
+
+KLUCZOWE SŁOWO: mgla
+o           9
+w           5
+wynosic     5
+ktory       5
+gesty       5
+wisiec      4
+on          4
+tylko       4
+dzien       3
+zauwazyc    3
+
+KLUCZOWE SŁOWO: nacisk
+na           10
+do            5
+pod           4
+pilot         4
+dochodzic     4
+moc           3
+a             3
+zakonczyc     3
+komisja       2
+sprawa        2
+
+KLUCZOWE SŁOWO: nalega
+na           5
+dowodca      5
+jednak       4
+zejsc        4
+do           3
+lubic        2
+mielic       0
+m            0
+materialy    0
+mechanizm    0
+
+KLUCZOWE SŁOWO: ofiary
+katastrofa    113
+smolenski      48
+wszystek       41
+ciac           39
+z              34
+ekshumacja     34
+on             24
+ktory          22
+o              17
+szczatki       17
+
+KLUCZOWE SŁOWO: pancerny
+o            10
+skrzydlo      8
+byly          5
+brzoza        5
+jaka          4
+twierdzic     4
+tupolew       4
+taka          4
+jest          4
+z             2
+
+KLUCZOWE SŁOWO: pilot
+w              42
+i              31
+z              25
+sie            23
+na             20
+do             14
+on             13
+prezydencki    10
+polskie        10
+metrum          9
+
+KLUCZOWE SŁOWO: pogoda
+w             8
+warunki       5
+o             5
+jaki          5
+informacja    4
+moment        4
+lotniczy      4
+wtedy         4
+byly          3
+podczas       3
+
+KLUCZOWE SŁOWO: prezydent
+w         55
+tym       25
+rp        20
+z         17
+i         15
+pani      12
+zginac    12
+cialo      9
+na         8
+oraz       8
+
+KLUCZOWE SŁOWO: prokuratura
+z             98
+w             65
+on            60
+przez         47
+ktory         45
+i             44
+o             41
+na            37
+jaka          35
+ekshumacja    34
+
+KLUCZOWE SŁOWO: przyczyny
+katastrofa    100
+smolenski      36
+z              23
+badajacy       20
+sie            18
+komisja        16
+do             15
+i              13
+on             13
+w              12
+
+KLUCZOWE SŁOWO: rosja
+w         21
+z         16
+do        12
+i         11
+on        10
+polski     9
+wrak       9
+rzad       7
+o          7
+jest       7
+
+KLUCZOWE SŁOWO: rosyjski
+z              71
+prokuratura    42
+prokurator     28
+i              22
+kontroler      20
+przez          19
+katastrofa     17
+w              17
+do             16
+komitet        13
+
+KLUCZOWE SŁOWO: samolot
+z              69
+w              57
+i              51
+na             43
+sie            38
+ktory          35
+o              33
+jaka           32
+prezydencki    30
+wrak           29
+
+KLUCZOWE SŁOWO: sekcja
+zwloki            5
+przeprowadzic     5
+on                4
+wszystek          4
+drugie            3
+po                2
+miedzynarodowy    0
+lubic             0
+m                 0
+materialy         0
+
+KLUCZOWE SŁOWO: skrzydlo
+z            53
+w            26
+na           24
+samolot      23
+sie          19
+jest         17
+przez        17
+byly         17
+uszkodzic    16
+brzoza       13
+
+KLUCZOWE SŁOWO: skrzynka
+wrak     19
+z        15
+zapis    11
+sie      10
+na       10
+i         9
+do        9
+w         7
+zwrot     6
+to        5
+
+KLUCZOWE SŁOWO: slad
+materialy     5
+stwierdzic    5
+na            5
+on            5
+ewentualny    5
+do            4
+dotyczyc      4
+ziemia        4
+wybuchowy     4
+dodac         3
+
+KLUCZOWE SŁOWO: sledztwo
+w              75
+prowadzic      24
+prokuratura    22
+smolenski      21
+sprawic        20
+warszawa       18
+zostac         17
+zakonczyc      17
+do             16
+jest           15
+
+KLUCZOWE SŁOWO: spis
+w         12
+i         12
+zamach    12
+on        10
+o          7
+wielki     5
+lubic      5
+portal     5
+byc        5
+to         5
+
+KLUCZOWE SŁOWO: stenogram
+z           32
+w           24
+o           19
+on          12
+rozmowic    10
+ujawnic     10
+decyzja      9
+i            8
+na           8
+to           8
+
+KLUCZOWE SŁOWO: strzal
+z                 5
+po                2
+zwrot             0
+miedzynarodowy    0
+lotniczy          0
+lubic             0
+m                 0
+materialy         0
+mechanizm         0
+medyczny          0
+
+KLUCZOWE SŁOWO: swiadek
+o            10
+zaczynac      7
+w             6
+i             5
+154m          5
+materialy     5
+wynik         5
+z             5
+ktory         5
+nowy          4
+
+KLUCZOWE SŁOWO: trotyl
+zwrot        0
+mielic       0
+lubic        0
+m            0
+materialy    0
+mechanizm    0
+medyczny     0
+metrum       0
+miec         0
+miedzy       0
+
+KLUCZOWE SŁOWO: tupolew
+w              56
+prezydencki    45
+na             22
+z              19
+sie            14
+ktory          14
+wrak           10
+skrzydlo       10
+katastrofa      9
+o               9
+
+KLUCZOWE SŁOWO: wieza
+z            31
+smolenski    29
+w            26
+lot          15
+na           12
+kontroler     9
+stenogram     8
+padac         5
+pomiedzy      5
+dla           5
+
+KLUCZOWE SŁOWO: wrak
+z           31
+samolot     29
+154m        20
+na          19
+i           19
+w           16
+fragment    15
+do          14
+moc         13
+o           11
+
+KLUCZOWE SŁOWO: wybuch
+materialy      20
+do             16
+dojsc          12
+on             10
+w              10
+na              7
+stwierdzic      7
+prokuratura     6
+wrak            6
+czy             5
+
+KLUCZOWE SŁOWO: zamach
+w        60
+to       27
+i        25
+z        21
+byc      18
+on       16
+o        16
+na       16
+tym      14
+dowod    14
+
+KLUCZOWE SŁOWO: zaniedbanie
+blad        5
+i           5
+na          3
+szkolic     3
+wszystek    2
+w           2
+zwrot       0
+miec        0
+lotniczy    0
+lubic       0
+
+KLUCZOWE SŁOWO: zbrodnia
+zwrot        0
+mielic       0
+lubic        0
+m            0
+materialy    0
+mechanizm    0
+medyczny     0
+metrum       0
+miec         0
+miedzy       0
+
+KLUCZOWE SŁOWO: zdrada
+dokument          5
+z                 5
+podpisac          4
+on                4
+jeszcze           3
+do                2
+zespol            1
+planowac          0
+miedzynarodowy    0
+lotniczy          0
