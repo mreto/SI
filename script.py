@@ -198,6 +198,10 @@ def get_single_articles_data():
             base = os.path.basename(article)
             print('generating data from ', article)
             print('to file ', out + (os.path.splitext(base)[0]) + '.dat')
+            if dic is None:
+                print(
+                    'SUPER ERROR are you sure dictionaries are at ./dictionary/?',
+                    'not using dictionaries')
 
             f = open(article)
             read = f.read()
@@ -248,6 +252,10 @@ def get_som_data():
         print('generating data from ', single_dir_data)
         vector = get_raw_vector(single_dir_data)
         vector_basis, dic = convert_to_basis(vector, dic)
+        if dic is None:
+            print(
+                'SUPER ERROR are you sure dictionaries are at ./dictionary/?',
+                'not using dictionaries')
         if vector_basis is not None:
             dictionary = count_occurence(vector_basis, keywords, keywords_full,
                                          6)
@@ -435,6 +443,8 @@ def convert_to_basis(vector, dic=None):
             converted_vector.append(word)
             if word not in '!.?':
                 words_not_in_vectors.append(word)
+    if not dic:
+        return np.array(converted_vector), None
     return np.array(converted_vector), dic
 
 
@@ -461,7 +471,7 @@ def filtr(scores):
 
     y = X['score']
     del X['score']
-    print("start mutal inforamtion")
+    print("start mutual information")
     mi = sk.mutual_info_classif(X, y)
     mi = mi / np.amax(mi)
     columns = X.columns
