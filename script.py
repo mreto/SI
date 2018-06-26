@@ -1,11 +1,59 @@
 import glob
+import random
 import numpy as np
 import math
 import pandas as pd
 import re
 import os
 import unidecode
+import dill
 from collections import Counter
+import sklearn.feature_selection as sk
+
+stopwords = [
+    'a', 'aby', 'ach', 'acz', 'aczkolwiek', 'aj', 'albo', 'ale', 'alez',
+    'alez', 'ani', 'az', 'az', 'bardziej', 'bardzo', 'beda', 'bedzie', 'bez',
+    'deda', 'beda', 'bede', 'bedę', 'bedzie', 'bo', 'bowiem', 'by', 'byc',
+    'byc', 'byl', 'byla', 'byli', 'bylo', 'byly', 'byl', 'byla', 'bylo',
+    'byly', 'bynajmniej', 'cala', 'cali', 'caly', 'cala', 'caly', 'ci', 'cie',
+    'ciebie', 'cie', 'co', 'cokolwiek', 'cos', 'cos', 'czasami', 'czasem',
+    'czemu', 'czy', 'czyli', 'daleko', 'dla', 'dlaczego', 'dlatego', 'do',
+    'dobrze', 'dokad', 'dokad', 'dosc', 'dosc', 'duzo', 'duzo', 'dwa', 'dwaj',
+    'dwie', 'dwoje', 'dzis', 'dzisiaj', 'dzis', 'gdy', 'gdyby', 'gdyz', 'gdyz',
+    'gdzie', 'gdziekolwiek', 'gdzies', 'gdzies', 'go', 'i', 'ich', 'ile', 'im',
+    'inna', 'inne', 'inny', 'innych', 'iz', 'iz', 'ja', 'jak', 'jakas',
+    'jakas', 'jakby', 'jaki', 'jakichs', 'jakichs', 'jakie', 'jakis', 'jakis',
+    'jakiz', 'jakiz', 'jakkolwiek', 'jako', 'jakos', 'jakos', 'ja', 'je',
+    'jeden', 'jedna', 'jednak', 'jednakze', 'jednakze', 'jedno', 'jego', 'jej',
+    'jemu', 'jesli', 'jest', 'jestem', 'jeszcze', 'jesli', 'jezeli', 'jezeli',
+    'juz', 'juz', 'kazdy', 'kazdy', 'kiedy', 'kilka', 'kims', 'kims', 'kto',
+    'ktokolwiek', 'ktora', 'ktore', 'ktorego', 'ktorej', 'ktory', 'ktorych',
+    'ktorym', 'ktorzy', 'ktos', 'ktos', 'ktora', 'ktore', 'ktorego', 'ktorej',
+    'ktory', 'ktorych', 'ktorym', 'ktorzy', 'ku', 'lat', 'lecz', 'lub', 'ma',
+    'maja', 'malo', 'mam', 'mi', 'miedzy', 'miedzy', 'mimo', 'mna', 'mna',
+    'mnie', 'moga', 'moga', 'moi', 'moim', 'moj', 'moja', 'moje', 'moze',
+    'mozliwe', 'mozna', 'moze', 'mozliwe', 'mozna', 'moj', 'mu', 'musi', 'my',
+    'na', 'nad', 'nam', 'nami', 'nas', 'nasi', 'nasz', 'nasza', 'nasze',
+    'naszego', 'naszych', 'natomiast', 'natychmiast', 'nawet', 'nia', 'nia',
+    'nic', 'nich', 'nie', 'niech', 'niego', 'niej', 'niemu', 'nigdy', 'nim',
+    'nimi', 'niz', 'niz', 'no', 'o', 'obok', 'od', 'okolo', 'on', 'ona', 'one',
+    'oni', 'ono', 'oraz', 'oto', 'owszem', 'pan', 'pana', 'pani', 'po', 'pod',
+    'podczas', 'pomimo', 'ponad', 'poniewaz', 'poniewaz', 'powinien',
+    'powinna', 'powinni', 'powinno', 'poza', 'prawie', 'przeciez', 'przeciez',
+    'przed', 'przede', 'przedtem', 'przez', 'przy', 'roku', 'rowniez',
+    'rowniez', 'sam', 'sama', 'sa', 'sie', 'sie', 'skad', 'skad', 'soba',
+    'soba', 'sobie', 'sposob', 'sposob', 'swoje', 'ta', 'tak', 'taka', 'taki',
+    'takie', 'takze', 'takze', 'tam', 'te', 'tego', 'tej', 'ten', 'teraz',
+    'tez', 'to', 'toba', 'toba', 'tobie', 'totez', 'totez', 'totoba', 'trzeba',
+    'tu', 'tutaj', 'twoi', 'twoim', 'twoj', 'twoja', 'twoje', 'twoj', 'twym',
+    'ty', 'tych', 'tylko', 'tym', 'u', 'w', 'wam', 'wami', 'was', 'wasz',
+    'wasza', 'wasze', 'we', 'wedlug', 'wiele', 'wielu', 'wiec', 'wiecej',
+    'wlasnie', 'wlasnie', 'wszyscy', 'wszystkich', 'wszystkie', 'wszystkim',
+    'wszystko', 'wtedy', 'wy', 'z', 'za', 'zaden', 'zadna', 'zadne', 'zadnych',
+    'zapewne', 'zawsze', 'ze', 'zeby', 'zeznowu', 'zl', 'znow', 'znowu',
+    'znow', 'zostal', 'zostal', 'zaden', 'zadna', 'zadne', 'zadnych', 'ze',
+    'zeby'
+]
 
 
 def get_raw_vector(directory):
@@ -25,7 +73,12 @@ def get_raw_vector(directory):
     for article in dir_all_files:
         f = open(article)
         read = f.read()
-        list_of_vectors.append(np.array(re.findall(r"[\w']+|[.!?;]", read)))
+        filtered_words = [
+            word for word in np.char.lower(
+                np.array(re.findall(r"[\w']+|[.!?;]", read)))
+            if word not in stopwords
+        ]
+        list_of_vectors.append(filtered_words)
         f.close()
     if list_of_vectors != []:
         vec = np.hstack(list_of_vectors)
@@ -116,6 +169,7 @@ def write_to_file(data_frame, file_name):
     # zzzz to ensure that it is the last column
     data_frame['zzzz'] = row_labels
     data_frame.to_csv(file_name, sep=' ', header=False, index=False, mode='a')
+    del data_frame['zzzz']
 
 
 def get_single_articles_data():
@@ -126,14 +180,17 @@ def get_single_articles_data():
     The data are beeing normalized as in the final report.
     """
 
-    directory_source = [
-        './articles/catastrophy/*', './articles/assasination/*'
-    ]
-    directory_out = [
-        './data/single_articles_data/catastrophy/',
-        './data/single_articles_data/assasination/'
-    ]
-    for source, out in zip(directory_source, directory_out):
+    data = [('./articles/catastrophy/*',
+             './data/single_articles_data/catastrophy/', 0),
+            ('./articles/assasination/*',
+             './data/single_articles_data/assasination/', 1)]
+
+    # super important
+    dic = None
+
+    scores = [[] for i in data]
+    for Tuple in data:
+        (source, out, y) = Tuple
         dir_all_files = glob.glob(source)
         keywords = [line.rstrip('\n') for line in open('keywords')]
         keywords_full = [line.rstrip('\n') for line in open('./keywords_full')]
@@ -144,18 +201,22 @@ def get_single_articles_data():
 
             f = open(article)
             read = f.read()
-            vector = np.array(re.findall(r"[\w']+|[.!?;]", read))
+            vector = [
+                word for word in np.char.lower(
+                    np.array(re.findall(r"[\w']+|[.!?;]", read)))
+                if word not in stopwords
+            ]
             f.close()
-            vector = np.char.lower(vector)
-            vector_basis, _ = convert_to_basis(vector)
+            vector_basis, dic = convert_to_basis(vector, dic)
             dictionary = count_occurence(vector_basis, keywords, keywords_full,
                                          6)
-
             data_frame = pd.DataFrame(dictionary).T.fillna(0)
             normalized = normalize(delete_vector_tail(data_frame))
+            scores[y].append(normalized)
             base = os.path.basename(article)
             write_to_file(normalized,
                           out + (os.path.splitext(base)[0]) + '.dat')
+    return scores
 
 
 def get_som_data():
@@ -180,10 +241,13 @@ def get_som_data():
     keywords = [line.rstrip('\n') for line in open('keywords')]
     keywords_full = [line.rstrip('\n') for line in open('./keywords_full')]
 
+    # super important
+    dic = None
+    out = []
     for single_dir_data, single_dir_output in zip(dir_data, dir_output):
         print('generating data from ', single_dir_data)
         vector = get_raw_vector(single_dir_data)
-        vector_basis, _ = convert_to_basis(vector)
+        vector_basis, dic = convert_to_basis(vector, dic)
         if vector_basis is not None:
             dictionary = count_occurence(vector_basis, keywords, keywords_full,
                                          6)
@@ -201,6 +265,8 @@ def get_som_data():
             normalized = normalize(delete_vector_tail(data_frame))
             # shorter_data_frame.to_csv('./analyze_after_cut/vector_assasination')
             write_to_file(normalized, single_dir_output)
+            out.append(normalized)
+    return out
 
 
 def normalize(data_frame):
@@ -212,16 +278,17 @@ def normalize(data_frame):
     return data_frame.fillna(0)
 
 
-def delete_vector_tail(data_frame):
+def delete_vector_tail(data_frame, minimum=50):
     """
     delete the column of data_frame that has little impact on the word and can
     be percived as a noise
     """
+
     for column in data_frame:
         m = float(data_frame[column].max())
         s = float(data_frame[column].sum())
         similarity = (m / s) * 100
-        if s <= 10 or similarity >= 50:
+        if s <= 10 or similarity >= minimum:
             data_frame.pop(column)
     return data_frame
 
@@ -339,7 +406,7 @@ def get_multiply_som_data(n):
                 output + 'multiply_' + str(i).zfill(2) + '_' + str(n) + '.dat')
 
 
-def convert_to_basis(vector):
+def convert_to_basis(vector, dic=None):
     """
     Giving the vector with natural polish text, returns bases
     ['smolenskie', 'sprawy'] -> ['smolenski', 'sprawa']
@@ -350,13 +417,15 @@ def convert_to_basis(vector):
     """
 
     # load directory containing all Polish words
-    dic = {}
-    all_data_dic = glob.glob('./dictionaries/*')
-    for dict_file in all_data_dic:
-        with open(dict_file) as f:
-            for line in f:
-                dic[unidecode.unidecode(
-                    line.split()[0])] = unidecode.unidecode(line.split()[1])
+    if dic is None:
+        dic = {}
+        all_data_dic = glob.glob('./dictionaries/*')
+        for dict_file in all_data_dic:
+            with open(dict_file) as f:
+                for line in f:
+                    dic[unidecode.unidecode(
+                        line.split()[0])] = unidecode.unidecode(
+                            line.split()[1])
     converted_vector = []
     words_not_in_vectors = []
     for word in vector:
@@ -366,11 +435,86 @@ def convert_to_basis(vector):
             converted_vector.append(word)
             if word not in '!.?':
                 words_not_in_vectors.append(word)
-    return np.array(converted_vector), words_not_in_vectors
+    return np.array(converted_vector), dic
+
+
+def filtr(scores):
+    X = pd.DataFrame()
+    max_occurence = 0
+    for list_of_scores in scores:
+        if len(list_of_scores) > max_occurence:
+            max_occurence = len(list_of_scores)
+
+    for class_id, scores_in_class in enumerate(scores):
+        for i, score in enumerate(scores_in_class):
+            score['score'] = class_id
+            X = X.append(score, sort=True)
+        while i < max_occurence:
+            X = X.append(
+                scores_in_class[random.randint(0,
+                                               len(scores_in_class) - 1)],
+                sort=True)
+            i += 1
+    X = X.fillna(0)
+    # round to [0.2, 0.4, 0.6, 0.8, 1]
+    X = (X * 5).round(0) / 5
+
+    y = X['score']
+    del X['score']
+    print("start mutal inforamtion")
+    mi = sk.mutual_info_classif(X, y)
+    mi = mi / np.amax(mi)
+    columns = X.columns
+    usefull_feature = mi != 0
+    print("uzyteczne: ", columns[usefull_feature].tolist(),
+          columns[usefull_feature].shape)
+    print("bexuzyteczne: ", columns[np.invert(usefull_feature)].tolist(),
+          columns[np.invert(usefull_feature)].shape)
+    print("najlepsze , ", columns[mi > 0].tolist())
+
+    return columns[usefull_feature]
+
+
+def get_filtered_single_articles_data(scores, usefull_feature):
+    data = [('./articles/catastrophy/*',
+             './data/single_articles_data_filtered/catastrophy/'),
+            ('./articles/assasination/*',
+             './data/single_articles_data_filtered/assasination/')]
+
+    for dir_tuple, score_list in zip(data, scores):
+        (source, out) = dir_tuple
+        dir_all_files = glob.glob(source)
+        for article, normalized in zip(dir_all_files, score_list):
+            base = os.path.basename(article)
+            indices = np.intersect1d(usefull_feature, normalized.columns)
+            if indices.size > 0:
+                filtered = normalized[indices]
+                write_to_file(filtered,
+                              out + (os.path.splitext(base)[0]) + '.dat')
+    return scores
+
+
+def get_filtered_som_data(scores, usefull_features):
+    dir_output = [
+        './data/basic_data/fassasination_plus_catastrophy.dat',
+        './data/basic_data/fcorrect_assasination.dat',
+        './data/basic_data/fcorrect_catastrophy.dat',
+        './data/basic_data/fneutral_from_wiki.dat'
+    ]
+
+    i = 0
+    for single_dir_output in dir_output:
+        normalized = scores[i]
+        i += 1
+        # shorter_data_frame.to_csv('./analyze_after_cut/vector_assasination')
+        indices = np.intersect1d(usefull_feature, normalized.columns)
+        filtered = normalized[indices]
+        write_to_file(filtered, single_dir_output)
 
 
 if __name__ == "__main__":
-    # get_som_data()
-    # get_parted_som_data(30)
-    get_multiply_som_data(30)
-    # get_single_articles_data()
+    scores_single = get_single_articles_data()
+    scores_basic = get_som_data()
+    usefull_feature = filtr(scores_single)
+    get_filtered_single_articles_data(scores_single, usefull_feature)
+    get_filtered_som_data(scores_basic, usefull_feature)
