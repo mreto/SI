@@ -200,7 +200,7 @@ def get_single_articles_data():
             print('to file ', out + (os.path.splitext(base)[0]) + '.dat')
             if dic is None:
                 print(
-                    'SUPER ERROR are you sure dictionaries are at ./dictionary/?',
+                    'SUPER ERROR are you sure dictionaries are at ./dictionaries/?',
                     'not using dictionaries')
 
             f = open(article)
@@ -254,7 +254,7 @@ def get_som_data():
         vector_basis, dic = convert_to_basis(vector, dic)
         if dic is None:
             print(
-                'SUPER ERROR are you sure dictionaries are at ./dictionary/?',
+                'SUPER ERROR are you sure dictionaries are at ./dictionaries/?',
                 'not using dictionaries')
         if vector_basis is not None:
             dictionary = count_occurence(vector_basis, keywords, keywords_full,
